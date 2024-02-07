@@ -9,8 +9,8 @@ function App() {
   }
 
   function changeContext() {
-    setDummyArr([
-      ...dummyContext.dummyData,
+    setDummyArr((prevStateValue) => [
+      ...prevStateValue,
       "newText"
     ]);
   }
